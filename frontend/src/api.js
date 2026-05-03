@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:5000"
+  baseURL: "https://ai-burnout-predictor-backend.onrender.com"
 });
 
 // Add token to every request automatically

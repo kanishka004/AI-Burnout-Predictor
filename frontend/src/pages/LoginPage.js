@@ -18,7 +18,7 @@ export default function LoginPage() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://127.0.0.1:5000/login", {
+      const res = await axios.post("https://ai-burnout-predictor-backend.onrender.com/login", {
         email: user.email.trim().toLowerCase(),
         password: user.password.trim()
       });
