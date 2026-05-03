@@ -206,6 +206,12 @@ def predict():
 })
 
 
+@app.route("/create-db")
+def create_db():
+    db.create_all()
+    return "Database created!"
+
+
 @app.route("/trend", methods=["GET"])
 @jwt_required()
 def trend():
