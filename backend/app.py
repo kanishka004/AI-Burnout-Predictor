@@ -208,6 +208,7 @@ def predict():
 
 @app.route("/create-db")
 def create_db():
+    from extensions import db
     db.create_all()
     return "Database created!"
 
